@@ -88,7 +88,7 @@ const AdminLayout: React.FC = () => {
                       <>
                         <span className="flex-1">{item.label}</span>
                         {badge !== undefined && badge > 0 && (
-                          <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full ${item.badgeColor === 'amber' ? 'bg-amber-500/20 text-amber-400' : 'bg-emerald-500/20 text-emerald-400'}`}>{badge}</span>
+                          <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full ${(item as any).badgeColor === 'amber' ? 'bg-amber-500/20 text-amber-400' : 'bg-emerald-500/20 text-emerald-400'}`}>{badge}</span>
                         )}
                       </>
                     )}
